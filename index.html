@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма зворотного зв'язку</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h2>ЗАЛИШТЕ СВОЇ ДАНІ, МИ З ВАМИ ЗВ'ЯЖЕМОСЯ</h2>
+    
+    <form action="#" method="post" enctype="multipart/form-data">
+        <div class="main-content">
+            <!-- Ліва колонка -->
+            <div class="left-col">
+                <div class="input-group">
+                    <label>Ім'я <span>*</span></label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Email <span>*</span></label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Контактний телефон <span>*</span></label>
+                    <div class="phone-input">
+                        <span class="flag">🇺🇦</span>
+                        <input type="tel" name="phone" placeholder="+38 (XXX) XXX-XX-XX" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Посилання на Facebook, LinkedIn або CV <span>*</span></label>
+                    <input type="url" name="link" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Прикріпити файли</label>
+                    <input type="file" name="file">
+                </div>
+            </div>
+
+            <!-- Права колонка -->
+            <div class="right-col">
+                <div class="input-group">
+                    <label>Супровідний лист (не обов'язково)</label>
+                    <textarea name="cover_letter"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">НАДІСЛАТИ</button>
+
+                <div class="agreement">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">
+                        Надсиланням даної заявки я підтверджую, що я ознайомлений з 
+                        <a href="#">Політикою конфіденційності</a>, приймаю її умови 
+                        і згоден з нею, включаючи ті, що стосуються регламентації 
+                        обробки моїх персональних даних.
+                    </label>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
